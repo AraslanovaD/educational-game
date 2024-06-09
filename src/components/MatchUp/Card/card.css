@@ -1,0 +1,42 @@
+.card {
+    margin: 4px;
+    text-align: center;
+
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.card img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    
+    border-radius: 16px;
+
+    margin-bottom: 4px;
+}
+
+.yellow .card {
+    background: rgb(255, 255, 234);
+    border: solid 2px rgb(212, 212, 63);
+}
+
+.blue .card {
+    background: rgb(231, 242, 252);
+    border: solid 2px rgb(120, 173, 223);
+}
+
+.pink .card {
+    background: rgb(255, 231, 235);
+    border: solid 2px rgb(218, 123, 139);
+}
+
+.beige .card {
+    background: beige;
+    border: solid 2px rgb(185, 185, 122);
+}
+
+.green .card {
+    background: rgb(225, 252, 225);
+    border: solid 2px rgb(74, 189, 74);
+}

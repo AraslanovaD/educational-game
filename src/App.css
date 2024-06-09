@@ -1,0 +1,10 @@
+.field{
+    display: grid;
+    grid-template-columns:repeat(4, 300px);
+    grid-template-rows:repeat(3, 300px);
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+}

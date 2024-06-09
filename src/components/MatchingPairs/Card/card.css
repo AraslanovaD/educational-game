@@ -1,0 +1,67 @@
+.pairscard {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.front,
+.back {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front.flip {
+  visibility: hidden;
+}
+
+.yellow .front {
+  background: rgb(255, 255, 136);
+  border: solid 2px rgb(212, 212, 63);
+}
+
+.blue .front {
+  background: rgb(131, 195, 255);
+  border: solid 2px rgb(120, 173, 223);
+}
+
+.pink .front {
+  background: rgb(255, 125, 146);
+  border: solid 2px rgb(231, 98, 120);
+}
+
+.beige .front {
+  background: rgb(207, 207, 124);
+  border: solid 2px rgb(185, 185, 122);
+}
+
+.green .front {
+  background: rgb(116, 255, 116);
+  border: solid 2px rgb(74, 189, 74);
+}
+
+.yellow .front:hover {
+  background: rgb(212, 212, 63);
+}
+
+.blue .front:hover {
+  background: rgb(120, 173, 223);
+}
+
+.pink .front:hover {
+  background: rgb(231, 98, 120);
+}
+
+.beige .front:hover {
+  background: rgb(185, 185, 122);
+}
+
+.green .front:hover {
+  background: rgb(74, 189, 74);
+}

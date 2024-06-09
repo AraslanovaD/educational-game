@@ -1,0 +1,52 @@
+.word {
+    background-color: #C8BFE7;
+    border: solid 2px #6d58b9;
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.yellow .word {
+    background: rgb(255, 255, 136);
+    border: solid 2px rgb(212, 212, 63);
+}
+
+.blue .word {
+    background: rgb(131, 195, 255);
+    border: solid 2px rgb(120, 173, 223);
+}
+
+.pink .word {
+    background: rgb(255, 125, 146);
+    border: solid 2px rgb(218, 123, 139);
+}
+
+.beige .word {
+    background: rgb(207, 207, 124);
+    border: solid 2px rgb(185, 185, 122);
+}
+
+.green .word {
+    background: rgb(116, 255, 116);
+    border: solid 2px rgb(74, 189, 74);
+}
+
+.yellow .wrong,
+.green .wrong,
+.beige .wrong,
+.blue .wrong,
+.pink .wrong {
+    background: rgb(240, 99, 99);
+    border: solid 2px rgb(190, 63, 63);
+}
+
+.yellow .right,
+.green .right,
+.beige .right,
+.blue .right,
+.pink .right {
+    background: lightgreen;
+    border: solid 2px rgb(79, 177, 79);
+}

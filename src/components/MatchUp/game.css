@@ -1,0 +1,67 @@
+.field {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(3, 270px);
+  justify-content: center;
+}
+
+div {
+  position:static;
+  text-align: center;
+}
+
+.button {
+  margin: 4px;
+  font-size: 16px;
+  padding: 2px 8px;
+
+}
+
+p {
+  font-size: 16px;
+}
+
+.yellow .button {
+  background: rgb(255, 255, 136);
+  border: solid 2px rgb(212, 212, 63);
+}
+
+.blue .button {
+  background: rgb(131, 195, 255);
+  border: solid 2px rgb(120, 173, 223);
+}
+
+.pink .button {
+  background: rgb(255, 125, 146);
+  border: solid 2px rgb(231, 98, 120);
+}
+
+.beige .button {
+  background: rgb(207, 207, 124);
+  border: solid 2px rgb(185, 185, 122);
+}
+
+.green .button {
+  background: rgb(116, 255, 116);
+  border: solid 2px rgb(74, 189, 74);
+}
+
+.yellow .button:hover {
+  background: rgb(212, 212, 63);
+}
+
+.blue .button:hover {
+  background: rgb(120, 173, 223);
+}
+
+.pink .button:hover {
+  background: rgb(231, 98, 120);
+}
+
+.beige .button:hover {
+  background: rgb(185, 185, 122);
+}
+
+.green .button:hover {
+  background: rgb(74, 189, 74);
+}

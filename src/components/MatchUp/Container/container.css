@@ -1,0 +1,45 @@
+.container{
+    padding: 4px;
+    background: #ffffff;
+    border-radius: 16px;
+}
+
+.yellow .container{
+    border: solid 2px rgb(212, 212, 63);
+}
+
+.yellow .container-dragging{
+    border: dashed 2px rgb(212, 212, 63);
+}
+
+.blue .container{
+    border: solid 2px rgb(120, 173, 223);
+}
+
+.blue .container-dragging{
+    border: dashed 2px rgb(120, 173, 223);
+}
+
+.pink .container{
+    border: solid 2px rgb(218, 123, 139);
+}
+
+.pink .container-dragging{
+    border: dashed 2px rgb(218, 123, 139);
+}
+
+.beige .container{
+    border: solid 2px rgb(185, 185, 122);
+}
+
+.beige .container-dragging{
+    border: dashed 2px rgb(185, 185, 122);
+}
+
+.green .container{
+    border: solid 2px rgb(74, 189, 74);
+}
+
+.green .container-dragging{
+    border: dashed 2px rgb(74, 189, 74);
+}

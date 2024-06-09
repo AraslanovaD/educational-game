@@ -1,0 +1,10 @@
+.game{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(4, 200px);
+    justify-content: center;
+}
+
+.active .pairscard{
+    position: relative;
+}

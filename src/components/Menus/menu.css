@@ -1,0 +1,33 @@
+.menu h1{
+    color:rgb(0, 15, 27);
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+}
+
+.link {
+    color:rgb(0, 15, 27);
+    font-size: 20px;
+    text-decoration: none;
+
+    margin: 16px;
+    padding: 4px 16px;
+
+    background-color: rgb(211, 234, 255);
+    border: solid 2px rgb(150, 194, 235);
+    border-radius: 8px;
+}
+
+.link:hover{
+    background-color: rgb(186, 220, 252);
+}
+
+.back-to-menu {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+  }
