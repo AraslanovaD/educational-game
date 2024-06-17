@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/educational-game/static/css/main.59f6dfd6.css",
-    "main.js": "/educational-game/static/js/main.41b426e2.js",
+    "main.js": "/educational-game/static/js/main.86743f05.js",
     "static/js/453.271524ed.chunk.js": "/educational-game/static/js/453.271524ed.chunk.js",
     "static/media/fox.png": "/educational-game/static/media/fox.19572a324050e4eb013d.png",
     "static/media/strawberry.png": "/educational-game/static/media/strawberry.1c0230a4f255870a48dd.png",
@@ -100,11 +100,11 @@
     "static/media/dolphin.png": "/educational-game/static/media/dolphin.566e3894267754941874.png",
     "index.html": "/educational-game/index.html",
     "main.59f6dfd6.css.map": "/educational-game/static/css/main.59f6dfd6.css.map",
-    "main.41b426e2.js.map": "/educational-game/static/js/main.41b426e2.js.map",
+    "main.86743f05.js.map": "/educational-game/static/js/main.86743f05.js.map",
     "453.271524ed.chunk.js.map": "/educational-game/static/js/453.271524ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59f6dfd6.css",
-    "static/js/main.41b426e2.js"
+    "static/js/main.86743f05.js"
   ]
 }
