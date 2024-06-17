@@ -40,7 +40,7 @@ const seaWords = ["Краб", "Дельфин", "Рыба", "Медуза", "О�
 words['sea'] = CreatePairs(seaImages, seaWords);
 
 const shapesImages = importAll(require.context('./images/shapes', false, /\.(png|jpe?g|svg)$/));
-const shapesWords = ["Круг", "Шестиугольник", "Овал", "Пятиугольник", "Прямоугольник", "Ромб", "Полукруг", "Фигуры", "Квадрат", "Звезда", "Трапеция", "Треугольник"]
+const shapesWords = ["Ромб","Круг", "Шестиугольник", "Овал", "Пятиугольник", "Прямоугольник","Полукруг", "Фигуры", "Квадрат", "Звезда", "Трапеция", "Треугольник"]
 words['shapes'] = CreatePairs(shapesImages, shapesWords);
 
 const vegetablesImages = importAll(require.context('./images/vegetables', false, /\.(png|jpe?g|svg)$/));

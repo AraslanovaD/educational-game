@@ -62,7 +62,6 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
   }
 
   const handleAdd = (leaderName: string) => {
-    console.log(place)
     leaderboard.splice(place, 0, { name: leaderName, score: moves, formatTime: formatTime(), time: timer });
     leaderboard.pop();
     window.localStorage.setItem(storageKey, JSON.stringify(leaderboard));
@@ -74,7 +73,6 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
   }
 
   const checkFlippedCards = () => {
-
     let [firstCard, secondCard] = openCards;
 
     if (firstCard[0].word === secondCard[0].word) {
@@ -113,6 +111,7 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
 
   }, [openCards]);
 
+  
   useEffect(() => {
     if (foundPairsCount === words.length) {
       handlePause();

@@ -108,6 +108,7 @@ function Game({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
   }
 
   const CheckWords = () => {
+    console.log(words)
     let lenght = words.length;
     for (let i = 0; i < lenght; i++) {
       if (words[i].word === cardsList[i].word) {

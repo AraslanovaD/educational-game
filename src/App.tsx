@@ -22,16 +22,16 @@ function App({ words }: Props) {
           <Route path='/' element={<Menu words={words} />} />
 
           <Route path='/matchingpairs' element={<MatchingPairsMenu words={words} />} />
-          <Route path='/matchingpairs/sea' element={<MatchingPairs words={words.sea} isBlue={true}/>} />
-          <Route path='/matchingpairs/domestic' element={<MatchingPairs words={words.domestic} isBeige={true} />} />
-          <Route path='/matchingpairs/forest' element={<MatchingPairs words={words.forest} isGreen={true} />} />
-          <Route path='/matchingpairs/savanna' element={<MatchingPairs words={words.savanna} isYellow={true} />} />
-          <Route path='/matchingpairs/fruits' element={<MatchingPairs words={words.fruits} isPink={true} />} />
-          <Route path='/matchingpairs/vegetables' element={<MatchingPairs words={words.vegetables} isGreen={true} />} />
-          <Route path='/matchingpairs/berries' element={<MatchingPairs words={words.berries} isPink={true} />} />
-          <Route path='/matchingpairs/dishes' element={<MatchingPairs words={words.dishes} isBeige={true} />} />
-          <Route path='/matchingpairs/shapes' element={<MatchingPairs words={words.shapes} isBlue={true} />} />
-          <Route path='/matchingpairs/colors' element={<MatchingPairs words={words.colors} isYellow={true} />} />
+          <Route path='/matchingpairs/sea' element={<MatchingPairs words={words.sea} isBlue={true} storageKey='matchingSea'/>} />
+          <Route path='/matchingpairs/domestic' element={<MatchingPairs words={words.domestic} isBeige={true} storageKey='matchingDomestic'/>} />
+          <Route path='/matchingpairs/forest' element={<MatchingPairs words={words.forest} isGreen={true} storageKey='matchingForest'/>} />
+          <Route path='/matchingpairs/savanna' element={<MatchingPairs words={words.savanna} isYellow={true} storageKey='matchingSavanna'/>} />
+          <Route path='/matchingpairs/fruits' element={<MatchingPairs words={words.fruits} isPink={true} storageKey='matchingFruits'/>} />
+          <Route path='/matchingpairs/vegetables' element={<MatchingPairs words={words.vegetables} isGreen={true} storageKey='matchingVegetables'/>} />
+          <Route path='/matchingpairs/berries' element={<MatchingPairs words={words.berries} isPink={true} storageKey='matchingBerries'/>} />
+          <Route path='/matchingpairs/dishes' element={<MatchingPairs words={words.dishes} isBeige={true} storageKey='matchingDishes'/>} />
+          <Route path='/matchingpairs/shapes' element={<MatchingPairs words={words.shapes} isBlue={true} storageKey='matchingShapes'/>} />
+          <Route path='/matchingpairs/colors' element={<MatchingPairs words={words.colors} isYellow={true} storageKey='matchingcolors'/>} />
 
           <Route path='/matchup' element={<MatchUpMenu words={words} />} />
           <Route path='/matchup/sea' element={<MatchUp words={words.sea} isBlue={true} storageKey='matchSea'/>} />
