@@ -19,7 +19,7 @@ function App({ words }: Props) {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Menu words={words} />} />
+          <Route path='/educational-game/' element={<Menu words={words} />} />
 
           <Route path='/matchingpairs' element={<MatchingPairsMenu words={words} />} />
           <Route path='/matchingpairs/sea' element={<MatchingPairs words={words.sea} isBlue={true} storageKey='matchingSea'/>} />
