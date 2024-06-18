@@ -145,6 +145,16 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
     }
   }, [])
 
+  const PauseGame=()=>{
+    handlePause();
+    setLock(true);
+  }
+
+  const ResumeGame=()=>{
+    handleResume();
+    setLock(false);
+  }
+
   const GameRestart = () => {
     setLock(false);
     setCards(shuffle(cards));
@@ -186,8 +196,8 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
       />}
 
       {formatTime()}
-      {isActive && <button className='button' onClick={handlePause}>Пауза</button>}
-      {isPaused && <button className='button' onClick={handleResume}>Продолжить</button>}
+      {isActive && <button className='button' onClick={PauseGame}>Пауза</button>}
+      {isPaused && <button className='button' onClick={ResumeGame}>Продолжить</button>}
 
 
       <NavLink to='/matchingpairs' className='button back-to-menu'>
