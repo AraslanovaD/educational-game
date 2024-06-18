@@ -33,6 +33,7 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
   const [lock, setLock] = useState(false);
   const [isNewLeader, setIsNewLeader] = useState(false);
   const [isResultAdded, setIsResultAdded] = useState(false);
+  const [isFinished, setIsFinished] = useState(false);
   const [flippedCards, setFlippedCards] = useState(Array(cards.length).fill(false));
 
   const [openCards, setOpenCards] = useState<[{ image: string, word: string }, number][]>([]);
@@ -115,6 +116,7 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
   useEffect(() => {
     if (foundPairsCount === words.length) {
       handlePause();
+      setIsFinished(true)
     }
   }, [foundPairsCount])
 
@@ -153,6 +155,7 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
     handleStart();
     setIsNewLeader(false);
     setIsResultAdded(false);
+    setIsFinished(false)
   }
 
   let cardsShow = cards.map((card, position) => {
@@ -183,7 +186,7 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
       />}
 
       {formatTime()}
-      {!isPaused && <button className='button' onClick={handlePause}>Пауза</button>}
+      {isActive && <button className='button' onClick={handlePause}>Пауза</button>}
       {isPaused && <button className='button' onClick={handleResume}>Продолжить</button>}
 
 
@@ -193,11 +196,11 @@ const Game = ({ words, isYellow, isGreen, isBlue, isPink, isBeige, storageKey }:
 
       {isActive && <p>Ходы: {moves}</p>}
 
-      <div className={`game ${isActive?'active':''}`}>
+      <div className={`game ${!isFinished?'active':''}`}>
         {cardsShow}
       </div>
-      {!isActive && <button className='button' onClick={GameRestart}>Попробовать еще раз</button>}
-      {!isActive && <button className='button' onClick={() => { handleResults(true) }}>Таблица лидеров</button>}
+      {isFinished && <button className='button' onClick={GameRestart}>Попробовать еще раз</button>}
+      {isFinished  && <button className='button' onClick={() => { handleResults(true) }}>Таблица лидеров</button>}
     </div>
   );
 }
