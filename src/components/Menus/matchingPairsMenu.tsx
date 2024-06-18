@@ -11,7 +11,7 @@ type Props = {
 const MatchingPairsMenu = ({ words }: Props) => {
     return (
         <div className='menu'>
-            <NavLink to='/' className='link back-to-menu'>
+            <NavLink to='/educational-game' className='link back-to-menu'>
                 <span>Назад</span>
             </NavLink>
             <h1>Найти пару</h1>
